@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Formulario</title>
+        <meta charset="UTF-8">
+        <style>
+            table, td {
+                border:solid black 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table>
+                <caption><h1>Formulario de alta de usuario</h1></caption>
+                <tr><td colspan="2">Identificador de nou usuari:<input type="text" value="usu_012345" readonly="readonly" /></td></tr>
+                <tr><td>Nombre<input type="text" /></td><td>Apellido<input type="text" /></td></tr>
+                <tr><td>Contraseña<input type="password" /></td><td>Confirmar contraseña<input type="password" /></td></tr>
+                <tr><td colspan="2">Email<input type="text" /></td></tr>
+                <tr><td>Sexo</td><td><input type="radio" name="genre" value="varon" checked="checked">Varón
+                        <input type="radio" name="genre" value="mujer">Mujer</td></tr>
+                <tr><td>Aficiones</td><td><input type="checkbox" name="aficions" value="deporte" />Deporte<br />
+                    <input type="checkbox" name="aficions" value="lectura" checked="checked" />Lectura<br />
+                    <input type="checkbox" name="aficions" value="cine" />Cine<br /></td></tr>
+                <tr><td>País</td><td><select>
+                        <option name="francia">Francia</option>
+                        <option name="espana">España</option>
+                        <option name="portugal">Portugal</option></select></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+                <tr><td></td><td></td></tr>
+            </table>   
+        </form>
+    </body>
+</html>
