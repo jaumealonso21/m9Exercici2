@@ -4,33 +4,52 @@
         <title>Formulario</title>
         <meta charset="UTF-8">
         <style>
-            table, td {
+            table, th, td {
                 border:solid black 1px;
+            }
+            tr.peuForm {
+                text-align: center;
             }
         </style>
     </head>
     <body>
-        <form>
+        <form action="">
             <table>
                 <caption><h1>Formulario de alta de usuario</h1></caption>
-                <tr><td colspan="2">Identificador de nou usuari:<input type="text" value="usu_012345" readonly="readonly" /></td></tr>
-                <tr><td>Nombre<input type="text" /></td><td>Apellido<input type="text" /></td></tr>
-                <tr><td>Contraseña<input type="password" /></td><td>Confirmar contraseña<input type="password" /></td></tr>
-                <tr><td colspan="2">Email<input type="text" /></td></tr>
-                <tr><td>Sexo</td><td><input type="radio" name="genre" value="varon" checked="checked">Varón
+                <tr><th colspan="2">Identificador de nou usuari: 
+                        <input type="text" value="usu_012345" readonly="readonly" /></th></tr>
+                <tr><td>Nombre <input type="text" /></td>
+                    <td>Apellido <input type="text" /></td></tr>
+                <tr><td>Contraseña <input type="password" /></td>
+                    <td>Confirmar contraseña <input type="password" /></td></tr>
+                <tr><td colspan="2">Email <input type="text" /></td></tr>
+                <tr><td>Sexo</td>
+                    <td><input type="radio" name="genre" value="varon" checked="checked">Varón
                         <input type="radio" name="genre" value="mujer">Mujer</td></tr>
-                <tr><td>Aficiones</td><td><input type="checkbox" name="aficions" value="deporte" />Deporte<br />
-                    <input type="checkbox" name="aficions" value="lectura" checked="checked" />Lectura<br />
-                    <input type="checkbox" name="aficions" value="cine" />Cine<br /></td></tr>
-                <tr><td>País</td><td><select>
-                        <option name="francia">Francia</option>
-                        <option name="espana">España</option>
-                        <option name="portugal">Portugal</option></select></td></tr>
-                <tr><td></td><td></td></tr>
-                <tr><td></td><td></td></tr>
-                <tr><td></td><td></td></tr>
-                <tr><td></td><td></td></tr>
-                <tr><td></td><td></td></tr>
+                <tr><td>Aficiones</td>
+                    <td><input type="checkbox" name="aficions" value="deporte" />Deporte<br />
+                        <input type="checkbox" name="aficions" value="lectura" checked="checked" />Lectura<br />
+                        <input type="checkbox" name="aficions" value="cine" />Cine<br /></td></tr>
+                <tr><td>País</td>
+                    <td><select name="paises">
+                          <option value="francia" selected="selected">Francia</option>
+                          <option value="espana">España</option>
+                          <option value="portugal">Portugal</option>
+                        </select></td></tr>
+                <tr><td>Colores favoritos</td>
+                    <td><select name="colores" multiple="multiple">
+                          <option value="rojo" selected="selected">Rojo</option>
+                          <option value="verde">Verde</option>
+                          <option value="azul" selected="selected">Azul</option>
+                        </select></td></tr>
+                <tr><td>Subir la foto</td>
+                    <td><input type="file" /></td></tr>
+                <tr><td>Comentarios personales</td>
+                    <td><textarea rows="5" cols="40">Escriba aquí sus comentarios</textarea></td></tr>
+                <tr class="peuForm"><td><input type="reset" /></td>
+                    <td><input type="submit" /></td></tr>
+                <tr class="peuForm"><td colspan="2">
+                        <input type="button" value="Modificar datos del usuario" disabled="disabled" /></td></tr>
             </table>   
         </form>
     </body>
